@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSSDesk</title>
+    <style type="text/css">
+      
+      body { background-color: #2574b0; }
+      
+      /*
+-----------------------------------------------------------------------------------------
+CSS document: ImageCafe Template Styles
+Created: 03/9/2006
+Last Modified: 03/09/2006
+NOTE: Template styles included here cannot be changed by the customer
+-------------------------------------------------------------------------------------- */
+* {margin:0;padding:0;}  /* zero out everything */
+body {
+  width:100%;
+	background:#EFEFEF;
+	text-align:center;
+}
+/*
+-----------------------------------------------------------------------------------------
+Global
+-------------------------------------------------------------------------------------- */
+div {position:relative;}
+#printwrap {position:static;}
+h1, h2, h3, h4, h5, h6 {margin:10px;}
+h1#website-title {margin:0;}
+h2#website-slogan {margin:0;}
+#navcontainer div h3 {margin:0;}
+#navcontainer div h3 {margin:0;}
+ul, ol {
+	margin:10px;
+	padding:0 0 0 20px;
+}
+ol {padding:0 0 0 30px;}
+blockquote {margin:10px 10px 10px 40px;}
+.clearer {clear:both;}
+.fill-bar {
+	float:left;
+	width:25px;
+	background:#000;
+	filter: alpha(opacity=10);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=10);
+	-moz-opacity: 0.10; /* for older versions of Moz/FF */
+	opacity:0.10;
+}
+
+/*
+-----------------------------------------------------------------------------------------
+General Layout Structure
+-------------------------------------------------------------------------------------- */
+#nav-top, #nav-left, #nav-right {
+	float:left;
+	width:100%;
+}
+#top-margin, #header-contents, #containerwrap {
+	margin:0 auto;
+	width:750px;
+	text-align:left;
+}
+	#inner {float:left;}
+.accent-none {display:none;}
+.accent {
+	float:left;
+	width:225px;
+	height:150px;
+	border-left:1px solid #D6D7D6;
+	border-right:1px solid #D6D7D6;
+  background: transparent url(https://www.weebly.com/editor/uploads/1/1/8/9/118999606/custom_themes/268019674177717525/files/images/handshake.jpg) no-repeat top left
+}
+#docwrapper {clear:both;}
+
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-TOP
+-------------------------------------------------------------------------------------- */
+/*------------------ Does Not Apply to This Layout ------------------*/	
+					
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-LEFT
+-------------------------------------------------------------------------------------- */
+/*------------------ Layout ------------------*/	
+#nav-left #top-margin {height:40px;}
+	#nav-left #top-margin #nav-topper {
+		float:left;
+		height:40px;
+		width:225px;
+		border-left:1px solid #D6D7D6;
+		border-right:1px solid #D6D7D6;
+		background-image:url(http://loansbyash.com/images/ic_059_navtopper_bg.png);
+		background-repeat:no-repeat;
+		background-position:0 0;
+	}
+	/*--- Width adjustments for IE ---*/
+		* html #nav-left #top-margin #nav-topper {width:224px;}
+			
+#nav-left #headertop {
+	float:left;
+	width:100%;
+	border-bottom:1px solid #D6D7D6;
+	border-top:1px solid #D6D7D6;
+}
+	#nav-left #headertop #website-title {
+		float:left;
+		padding:80px 0 10px 15px;
+		width:508px;
+		background-image:url(http://loansbyash.com/images/ic_059_title_bg_wide.png);
+		background-repeat:no-repeat;
+		background-position:0 0;
+	}
+		
+	#nav-left #headertop #website-slogan {
+		float:left;
+		padding:2px 0 3px 15px;
+		width:508px;
+		background-image:url(http://loansbyash.com/images/ic_059_slogan_bg.png);
+		background-repeat:no-repeat;
+		background-position:0 0;
+	}
+#nav-left #header-bar {
+	float:left;
+	width:100%;
+	height:22px;
+	border-bottom:1px solid #D6D7D6;
+}
+#nav-left #header-bar #header-bar-min {
+	width:750px;
+}
+#nav-left #content-wrap {
+	float:left;
+	width:750px;
+}
+	#nav-left #content-wrap #navcontainer {
+		float:left;
+		width:225px;
+		border-left:1px solid #D6D7D6;
+		border-right:1px solid #D6D7D6;
+		z-index:1000;
+	}
+		#nav-left #content-wrap #navcontainer #nav-inner {
+			float:left;
+			width:200px;
+			z-index:1000;
+		}
+			#nav-left #content-wrap #navcontainer #nav-inner #nav-wrapper {
+				float:left;
+				width:175px;
+				z-index:1000;
+			}
+			/*--- Width adjustments for IE ---*/
+				* html #nav-left #content-wrap #navcontainer #nav-inner .fill-bar#fill-1 {width:23px;}
+				* html #nav-left #content-wrap #navcontainer #nav-inner .fill-bar#fill-2 {width:23px;}
+	#nav-left #content-wrap #inner {
+		float:left;
+		width:523px;
+	}
+		#nav-left #content-wrap #inner #content {
+			float:left;
+			width:523px;
+		}
+#nav-left #content-wrap #content #footer {
+	float:left;
+	padding:0 10px;
+}
+
+#nav-left #headertop {min-width:750px;}
+#nav-left #header-bar {min-width:750px;}
+#nav-left #header-bar #header-bar-min {width:750px;}
+
+/*------------------ Navigation Elements ------------------*/
+#nav-left #navcontainer #nav-wrapper div, #nav-left #navcontainer #nav-wrapper div h3 {
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+	#nav-left #navcontainer #nav-wrapper div {width:177px;}
+	#nav-left #navcontainer #nav-wrapper div a:link, 
+	#nav-left #navcontainer #nav-wrapper div a:active, 
+	#nav-left #navcontainer #nav-wrapper div a:visited {
+		float:left;
+		/*--- width for IE5 --*/
+			width:175px;
+		padding:10px;
+		text-decoration:none;
+		/*--- width for all other browsers --*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+			width:155px;
+    		word-wrap: break-word;
+	}
+	#nav-left #navcontainer #nav-wrapper div a:hover {padding-top:10px;}
+		#nav-left #navcontainer #nav-wrapper div div.submenu, 
+		#nav-left #navcontainer #nav-wrapper div div.submenu h3 {
+			float:left;
+			display:block;
+		}
+		#nav-left #navcontainer #nav-wrapper div div.submenu {
+			position:absolute;
+			top:0;
+			left:0;
+			visibility: hidden;
+			width:175px;
+		}
+			#nav-left #navcontainer #nav-wrapper div div.submenu div {
+				display:block;
+				margin:0;
+			}
+			#nav-left #navcontainer #nav-wrapper div div.submenu a:link, 
+			#nav-left #navcontainer #nav-wrapper div div.submenu a:active, 
+			#nav-left #navcontainer #nav-wrapper div div.submenu a:visited {
+				float:left;
+				word-wrap: break-word;
+			}
+			#nav-left #navcontainer #nav-wrapper div div.submenu a:hover {
+				padding-top:10px;
+				border-top:0;
+			}
+
+/*------------------ Table Structures ------------------*/	
+#nav-left #content-table {
+	float:left;
+	width:100%;
+}
+	#nav-left #content-table-main {width:100%;}
+		#nav-left #content-table-main p {margin:10px 10px 15px 10px;}
+
+	
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-RIGHT
+-------------------------------------------------------------------------------------- */
+/*------------------ Layout ------------------*/	
+#nav-right #top-margin {height:40px;}
+	#nav-right #top-margin #nav-topper {
+		float:right;
+		height:40px;
+		width:225px;
+		border-left:1px solid #D6D7D6;
+		border-right:1px solid #D6D7D6;
+		background-image:url(http://loansbyash.com/images/ic_059_navtopper_bg.png);
+		background-repeat:no-repeat;
+		background-position:0 0;
+	}
+	/*--- Width adjustment for IE ---*/
+		* html #nav-right #top-margin #nav-topper {width:224px;}
+			
+#nav-right #headertop {
+	float:left;
+	width:100%;
+	border-bottom:1px solid #D6D7D6;
+	border-top:1px solid #D6D7D6;
+}
+	#nav-right #headertop .accent {float:right;}
+	#nav-right #headertop #website-title {
+		float:left;
+		padding:80px 0 10px 15px;
+		width:508px;
+		background-image:url(http://loansbyash.com/images/ic_059_title_bg_2.png);
+		background-repeat:no-repeat;
+		background-position:0 0;
+	}
+	#nav-right #headertop #website-slogan {
+		float:left;
+		padding:2px 0 3px 15px;
+		width:508px;
+		background-image:url(http://loansbyash.com/images/ic_059_slogan_bg_2.png);
+		background-repeat:no-repeat;
+		background-position:0 0;
+	}
+#nav-right #header-bar {
+	float:left;
+	width:100%;
+	height:22px;
+	border-bottom:1px solid #D6D7D6;
+}
+#nav-right #content-wrap {
+	float:left;
+	width:750px;
+}
+	#nav-right #content-wrap #navcontainer {
+		float:right;
+		width:225px;
+		border-left:1px solid #D6D7D6;
+		border-right:1px solid #D6D7D6;
+		z-index:1000;
+	}
+		#nav-right #content-wrap #navcontainer #nav-inner {
+			float:left;
+			width:200px;
+			z-index:1000;
+		}
+			#nav-right #content-wrap #navcontainer #nav-inner #nav-wrapper {
+				float:left;
+				width:175px;
+				z-index:1000;
+			}
+			/*--- Width adjustments for IE ---*/
+				* html #nav-right #content-wrap #navcontainer #nav-inner .fill-bar#fill-1 {width:23px;}
+				* html #nav-right #content-wrap #navcontainer #nav-inner .fill-bar#fill-2 {width:23px;}
+	#nav-right #content-wrap #inner {
+		float:left;
+		width:523px;
+	}
+		#nav-right #content-wrap #inner #content {
+			float:left;
+			width:523px;
+		}
+#nav-right #content-wrap #content #footer {
+	float:left;
+	padding:0 10px;
+}
+
+#nav-right #headertop {min-width:750px;}
+#nav-right #header-bar {min-width:750px;}
+#nav-right #header-bar #header-bar-min {width:750px;}
+
+
+/*------------------ Navigation Elements ------------------*/
+#nav-right #navcontainer #nav-wrapper div, #nav-right #navcontainer #nav-wrapper div h3 {
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+	#nav-right #navcontainer #nav-wrapper div {width:177px;}
+	#nav-right #navcontainer #nav-wrapper div a:link, 
+	#nav-right #navcontainer #nav-wrapper div a:active, 
+	#nav-right #navcontainer #nav-wrapper div a:visited {
+		float:left;
+		/*--- width for IE5 --*/
+			width:175px;
+		padding:10px;
+		text-decoration:none;
+		/*--- width for all other browsers --*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+			width:155px;
+			word-wrap: break-word;
+	}
+	#nav-right #navcontainer #nav-wrapper div a:hover {padding-top:10px;}
+		#nav-right #navcontainer #nav-wrapper div div.submenu, 
+		#nav-right #navcontainer #nav-wrapper div div.submenu h3 {
+			float:left;
+			display:block;
+		}
+		#nav-right #navcontainer #nav-wrapper div div.submenu {
+			position:absolute;
+			top:0;
+			left:0;
+			visibility: hidden;
+			width:175px;
+		}
+			#nav-right #navcontainer #nav-wrapper div div.submenu div {
+				display:block;
+				margin:0;
+			}
+			#nav-right #navcontainer #nav-wrapper div div.submenu a:link, 
+			#nav-right #navcontainer #nav-wrapper div div.submenu a:active, 
+			#nav-right #navcontainer #nav-wrapper div div.submenu a:visited {
+				float:left;
+				word-wrap: break-word;
+			}
+			#nav-right #navcontainer #nav-wrapper div div.submenu a:hover {
+				padding-top:10px;
+				border-top:0;
+			}
+
+/*------------------ Table Structures ------------------*/	
+#nav-right #content-table {
+	float:left;
+	width:100%;
+}
+	#nav-right #content-table-main {width:100%;}
+		#nav-right #content-table-main p {margin:10px 10px 15px 10px;}
+
+		
+/*
+-----------------------------------------------------------------------------------------
+WIDE LAYOUT STYLES
+-------------------------------------------------------------------------------------- */
+body#wide #top-margin,
+body#wide #header-contents,
+body#wide #containerwrap {
+	width:990px;
+}
+
+/*------------------------------------ NAV-TOP ------------------------------------*/
+/* Does Not Apply to This Layout */	
+
+/*------------------------------------ NAV-LEFT ------------------------------------*/
+body#wide #nav-left #headertop #website-title {
+	width:748px;
+	background-image:url(http://loansbyash.com/images/ic_059_title_bg_wide.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+body#wide #nav-left #headertop #website-slogan {
+	width:748px;
+	background-image:url(http://loansbyash.com/images/ic_059_slogan_bg_wide.png);
+}
+body#wide #nav-left #content-wrap {width:990px;}
+	body#wide #nav-left #content-wrap #inner {width:748px;}
+		body#wide #nav-left #content-wrap #inner #content {width:748px;}
+
+body#wide #nav-left #headertop {min-width:990px;}
+body#wide #nav-left #header-bar {min-width:990px;}
+body#wide #nav-left #header-bar #header-bar-min {width:990px;}
+
+/*------------------------------------ NAV-RIGHT ------------------------------------*/
+body#wide #nav-right #headertop #website-title {
+	width:748px;
+	background-image:url(../images/ic_059_title_bg_2_wide.png);
+}
+body#wide #nav-right #headertop #website-slogan {
+	width:748px;
+	background-image:url(../images/ic_059_slogan_bg_2_wide.png);
+}
+body#wide #nav-right #content-wrap {width:990px;}
+	body#wide #nav-right #content-wrap #inner {width:748px;}
+		body#wide #nav-right #content-wrap #inner #content {width:748px;}
+
+body#wide #nav-right #headertop {min-width:990px;}
+body#wide #nav-right #header-bar {min-width:990px;}
+body#wide #nav-right #header-bar #header-bar-min {width:990px;}
+    </style>
+  </head>
+  <body>
+    <div id="printwrap">
+<div id="nav-left">
+  <div id="top-margin" class="background">
+		<div id="nav-topper" class="tertiary">&nbsp;</div>
+	</div>
+	<div id="headertop" class="primary">
+		<div id="header-contents">
+			<div class="accent"></div>
+			<h1 id="website-title">Ash Singh, Loan Specialist</h1>
+			<h2 id="website-slogan">Email: Ash@loansbyash.com &#166;  Cell: 408.623.8171 &#166; Fax: 408.228.1656</h2>
+		</div>
+	</div>
+	<div id="header-bar" class="secondary">
+			<div id="header-bar-min" class="secondary"></div>
+	</div>
+	<div id="containerwrap">
+		<div id="content-wrap" class="background">
+			<div id="navcontainer" class="tertiary">
+				<div id="nav-inner">
+					<div class="fill-bar" id="fill-1"></div>
+					<div id="nav-wrapper" class="tertiary">
+						<div><a href="home.html" class="tertiary" target="_self"><h3>Home</h3></a></div>
+<div><a href="contactingash.html" class="tertiary" target="_self"><h3>Contacting Ash</h3></a></div>
+<div><a href="onlineloanapplication.html" class="tertiary" target="_self"><h3>Online Loan Application</h3></a></div>
+<div><a href="standardloandisclosures.html" class="tertiary" target="_self"><h3>Standard Loan Disclosures</h3></a></div>
+<div><a href="makeanappointment.html" class="tertiary" target="_self"><h3>Make An Appointment</h3></a></div>
+<div><a href="getdirections.html" class="tertiary" target="_self"><h3>Get Directions</h3></a></div>
+<div><a href="loaninformation.html" class="tertiary" target="_self"><h3>Loan Information</h3></a><div class="submenu"><div><a href="loaninformation/whydoanocostloan.html" class="tertiary" target="_self"><h3>Why Do A No Cost Loan?</h3></a></div><div><a href="loaninformation/conformingvsjumboloans.html" class="tertiary" target="_self"><h3>Conforming vs Jumbo Loans</h3></a></div><div><a href="loaninformation/typesofloanpayments.html" class="tertiary" target="_self"><h3>Types Of Loan Payments</h3></a></div><div><a href="loaninformation/typesofloanprograms.html" class="tertiary" target="_self"><h3>Types Of Loan Programs</h3></a></div><div><a href="loaninformation/otherloanprograms.html" class="tertiary" target="_self"><h3>Other Loan Programs</h3></a></div><div><a href="loaninformation/taxbenefits.html" class="tertiary" target="_self"><h3>Tax Benefits</h3></a></div><div><a href="loaninformation/marketwatch.html" class="tertiary" target="_self"><h3>Market Watch</h3></a></div></div></div>
+<div><a href="loancalculators.html" class="tertiary" target="_self"><h3>Loan Calculators</h3></a><div class="submenu"><div><a href="loancalculators/interestonly.html" class="tertiary" target="_self"><h3>Interest Only</h3></a></div><div><a href="loancalculators/principalinterest.html" class="tertiary" target="_self"><h3>Principal & Interest </h3></a></div><div><a href="loancalculators/whatifipaymore.html" class="tertiary" target="_self"><h3>What If I Pay More?</h3></a></div><div><a href="loancalculators/taxbenefitanalysis.html" class="tertiary" target="_self"><h3>Tax Benefit Analysis</h3></a></div></div></div>
+<div><a href="onlineratequote.html" class="tertiary" target="_self"><h3>Online Rate Quote</h3></a></div>
+<div><a href="clienttestimonials.html" class="tertiary" target="_self"><h3>Client Testimonials</h3></a></div>
+
+					</div>
+				</div>
+				<div class="fill-bar" id="fill-2"></div>
+			</div>
+			<div id="inner">		
+				<div id="content">
+					<table id="content-table">
+		        	 	<tr>
+							<td id="content-table-main" align="left" valign="top">
+								<!-- Start content section --><div id="pagecols">
+<div id="column1">
+<div id="colbody1" class="colbody">
+<div class="building_block" id="pgbldblk46">
+<div class="blockbody" id="body_pgbldblk46"><table width="98%" border="0" cellspacing="0" cellpadding="2" align="center"><tr><td align="center" bgcolor="White"><span style="color:Black;font-weight:bold;font-size:20pt; font-family:times;">Specializing in NO COST Home Loans</span></td></tr></table></div>
+</div>
+<div class="building_block" id="pgbldblk54">
+<div class="blockbody" id="body_pgbldblk54">
+<table border="0" name="" width="100%" cellpadding="5" cellspacing="0">
+<tr align="" valign="">
+<td colspan="1" rowspan="1" width="100%" align="center" valign="top">
+	  &nbsp;
+        </td>
+</tr>
+</table>
+</div>
+</div>
+<div class="building_block" id="pgbldblk48">
+<div class="blockbody" id="body_pgbldblk48">
+<table border="0" name="" width="100%" cellpadding="5" cellspacing="0">
+<tr align="" valign="">
+<td colspan="1" rowspan="1" width="100%" align="" valign="top"><div></div>
+<div align="center" editor_id="mce_editor_0"><span style="font-family: 'palatino linotype', 'book antigua', garamond, georgia, 'times new roman', 'ms mincho', serif; color: #ff0000; background-color: #ffffff;"><span face="'arial narrow', arial, sans-serif" color="#000099" size="4" style="font-size: large;"><strong editor_id="mce_editor_0">NO COST Means: No Appraisal Fee, No Credit Report Fee, No Title Fee, No Lender Fee, No Underwriting Fee, No Broker Fee, No Admin Fee, No Processing Fee, No Notary Fee, No Recording Fee, No Wire/Courier Fees...etc</strong></span></span></div><br>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="building_block" id="pgbldblk27">
+<div class="blockbody" id="body_pgbldblk27">
+<table border="0" name="" width="100%" cellpadding="5" cellspacing="0">
+<tr align="" valign="">
+<td colspan="1" rowspan="1" width="100%" align="center" valign="top">
+             
+          <table summary="image table" cellpadding="0" cellspacing="0" border="0" width="733" style=""><tr>
+<td align="center" valign="top">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<td align="center"><img width="708" src="images/708_main_images.jpg" alt="" style="" border="0" height="132"></td>
+</tr>
+<tr>
+<td align="center"></td>
+</tr>
+</table>
+</td>
+</tr></table></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="building_block" id="pgbldblk41">
+<div class="blockbody" id="body_pgbldblk41">
+<table border="0" name="" width="100%" cellpadding="5" cellspacing="0">
+<tr align="" valign="">
+<td colspan="1" rowspan="1" width="100%" align="" valign="top"><p editor_id="mce_editor_0" style="text-align: center;"><span style="font-size: large; font-family: 'palatino linotype', 'book antigua', garamond, georgia, 'times new roman', 'ms mincho', serif;"><span style="color: #000000;"><span face="arial, verdana, sans-serif" size="3" editor_id="mce_editor_0"><span color="#000099"><strong editor_id="mce_editor_0">No Fees&nbsp;Pushed Into Your Loan.&nbsp; Fees are Simply Credited Right Back To You</strong>. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span></span></span><strong style="color: #000000; font-size: large;"><span face="courier new,monospace" color="#000000"><span face="'courier new', courier, monospace" color="#000099" size="4">You Will Pay Absolutely <span style="text-decoration: underline;">Nothing!</span></span></span></strong></p><br>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="building_block" id="pgbldblk31">
+<div class="blockbody" id="body_pgbldblk31">
+<table border="0" name="" width="100%" cellpadding="5" cellspacing="0">
+<tr align="" valign="">
+<td colspan="1" rowspan="1" width="50%" align="" valign="top">
+             <div><span style="font-size: medium; color: #000000; font-family: 'palatino linotype', 'book antigua', garamond, georgia, 'times new roman', 'ms mincho', serif;">In my years of experience, clients continually refinance their existing mortgage. Unfortunately, every&nbsp;refinance&nbsp;involves expensive closing cost fees!&nbsp;As a trusted mortgage specialist, my goal was to provide a solution for&nbsp;removing these fees.&nbsp;I have succesfully formulated a clever&nbsp;way of doing business that has received 100% Positive Feedback!</span></div>
+<div style="text-align: left;"><span style="color: #000000; font-family: 'palatino linotype', 'book antigua', garamond, georgia, 'times new roman', 'ms mincho', serif;"><span editor_id="mce_editor_0"><span face="'trebuchet ms', tahoma, sans-serif" size="3" editor_id="mce_editor_0" style="font-size: medium;"><br /></span></span></span><span editor_id="mce_editor_0"><span size="3" style="font-size: medium;"><span face="'trebuchet ms', tahoma, sans-serif" style="font-family: 'trebuchet ms', tahoma, sans-serif;"><span editor_id="mce_editor_0"><span style="color: #000000; font-family: 'palatino linotype', 'book antigua', garamond, georgia, 'times new roman', 'ms mincho', serif;"><span face="'trebuchet ms', tahoma, sans-serif">I simply <strong><em>Monitor</em></strong> ALL my client's files <strong><em editor_id="mce_editor_0">Daily</em></strong>, and if there ever is an opportunity to Lower your Rate at NO Cost... I will Lock&nbsp;Your Rate &amp; Immediately Notify You!&nbsp; The market is highly volatile, so how can you be assured that you are getting the right rate at the right time?</span>&nbsp; </span><br /><span style="color: #000000; font-family: 'palatino linotype', 'book antigua', garamond, georgia, 'times new roman', 'ms mincho', serif;"><span style="text-decoration: underline;">The only&nbsp;smart way to do this</span>: </span><em><strong editor_id="mce_editor_0"><span style="color: #000000; font-family: 'palatino linotype', 'book antigua', garamond, georgia, 'times new roman', 'ms mincho', serif;">Pay Nothing, And Drop Your Rate As The Market Drops!</span><br /></strong></em></span></span></span></span></div><br>             
+          
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="column2">
+<div id="colbody2" class="colbody"></div>
+</div>
+<div id="column3">
+<div id="colbody3" class="colbody"></div>
+</div>
+</div><div id="measurescroll" style="clear:both;"></div><table border="0" width="100%" cellpadding="0" cellspacing="0" id="other_footer">
+<tr>
+<td align="left" valign="middle"><h6 align="center" editor_id="mce_editor_0"><strong><span face="'arial black', arial, sans-serif" style="font-family: 'palatino linotype', 'book antigua', garamond, georgia, 'times new roman', 'ms mincho', serif; color: #000000; background-color: #ffffff;"><span face="helvetica, arial, sans-serif" color="#990000" size="3" editor_id="mce_editor_0" style="font-size: medium;">Think About It - Why Pay Fees Every Time You Refinance?</span> </span></strong></h6></td>
+</tr>
+<tr>
+<td align="left" valign="middle"></td>
+</tr>
+</table>
+<!-- End content section -->
+							</td>
+						</tr>
+					</table>
+					<div id="footer"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="docwrapper"></div>
+</div>
+</div>
+  </body>
+</html>

@@ -4,6 +4,7 @@
 $(document).ready(function() {
     var s = $("#navigation");
     var ss = $(".wsite-menu-wrap");
+    var w = $('#wrapper');
 
     var pos = s.position();
     $(window).scroll(function() {
@@ -26,10 +27,18 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if(scroll > position) {
         console.log('scrollDown');
+        console.log(position);
+        if(position > 500 ) {
+           // s.addClass('navmenu-stick');
+            w.addClass('wrapper-hack');
+
+        }
         //$('div').text('Scrolling Down Scripts');
     } else {
          console.log('scrollUp');
          ss.removeClass("submenu-stick");
+         //s.removeClass('navmenu-stick');
+         w.removeClass('wrapper-hack');
          //$('div').text('Scrolling Up Scripts');
     }
     position = scroll;

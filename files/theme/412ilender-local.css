@@ -15,7 +15,7 @@
 
 blockquote {
   color: red;
-  border: 4px solid #d6d7d6;
+  border: 4px solid #d6d7d6 !important;
   text-align: center;
 }
 

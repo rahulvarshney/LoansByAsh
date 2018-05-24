@@ -21,6 +21,7 @@ blockquote {
 
 [id = '412ilender-content'] {
   max-width: 700px;
+  padding: 0px 40px;
 }
 
 [id = '412ilender-tagline']:before {
